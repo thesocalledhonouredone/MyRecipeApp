@@ -1,6 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { RecipeContext } from '../context/RecipeContext';
+import { useNavigate } from 'react-router-dom';
 
 const AddRecipe = () => {
+  const { addRecipe } = useContext(RecipeContext);
+  const navigate = useNavigate();
+
   const [recipe, setRecipe] = useState({
     title: '',
     ingredients: '',
@@ -20,8 +25,8 @@ const AddRecipe = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Recipe Submitted:', recipe);
-    // Add logic to save the recipe (will be implemented later)
+    addRecipe(recipe); // Add the new recipe
+    navigate('/view-recipes'); // Redirect to the View Recipes page
   };
 
   return (
@@ -84,7 +89,9 @@ const AddRecipe = () => {
             onChange={handleImageUpload}
           />
         </div>
-        <button type="submit" className="btn btn-primary">Save Recipe</button>
+        <button type="submit" className="btn btn-primary">
+          Save Recipe
+        </button>
       </form>
     </div>
   );
