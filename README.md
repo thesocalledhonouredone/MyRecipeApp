@@ -114,13 +114,13 @@ http://localhost:5173
 Here are some screenshots of the application:
 
 ### Home Page
-![Home Page](screenshots/home.png)
+![Home Page](recipe-app/screenshots/home.png)
 
 ### Add Recipe Page
-![Add Recipe Page](screenshots/add-recipe.png)
+![Add Recipe Page](recipe-app/screenshots/add-recipe.png)
 
 ### View Recipes Page
-![View Recipes Page](screenshots/view-recipes.png)
+![View Recipes Page](recipe-app/screenshots/view-recipes.png)
 
 ---
 
