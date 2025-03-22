@@ -122,9 +122,6 @@ Here are some screenshots of the application:
 ### View Recipes Page
 ![View Recipes Page](screenshots/view-recipes.png)
 
-### Recipe Details Page
-![Recipe Details Page](screenshots/recipe-details.png)
-
 ---
 
 ## Future Enhancements
